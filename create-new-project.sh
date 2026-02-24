@@ -50,9 +50,7 @@ sed -i "s|database.default.database = .*|database.default.database = $DB_NAME|" 
 echo "📦 Installing dependencies..."
 composer install
 
-echo "🗄 Running migrations..."
-php spark migrate
-
 echo ""
 echo "✅ Project $PROJECT_NAME created successfully!"
 echo "👉 Location: $DESTINATION_DIR"
+echo "👉 You may now run 'php spark migrate'"
